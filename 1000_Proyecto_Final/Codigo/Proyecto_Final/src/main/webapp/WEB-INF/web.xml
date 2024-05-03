@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description>Realiza el registro de los videos</description>
+    <display-name>VideoRegistry</display-name>
+    <servlet-name>VideoRegistry</servlet-name>
+    <servlet-class>programLibraries.controllers.VideoRegistry</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VideoRegistry</servlet-name>
+    <url-pattern>/controller/video/registry</url-pattern>
+  </servlet-mapping>
+  <display-name>Proyecto_Final</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>lee el archivo de datos </description>
+    <display-name>ReadandSetCounter</display-name>
+    <servlet-name>ReadandSetCounter</servlet-name>
+    <servlet-class>programLibraries.controllers.ReadandSetCounter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadandSetCounter</servlet-name>
+    <url-pattern>/controller/setCounter/readText/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClearDataModel</display-name>
+    <servlet-name>ClearDataModel</servlet-name>
+    <servlet-class>programLibraries.controllers.ClearDataModel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClearDataModel</servlet-name>
+    <url-pattern>/controller/clear/model</url-pattern>
+  </servlet-mapping>
+</web-app>
